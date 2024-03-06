@@ -1,1 +1,50 @@
 /* Start writing your CSS */
+
+body{
+    background-image: url('../img/animatedsky.GIF');
+    background-position: center;
+  
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: 0;
+    margin: 0;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+  }
+
+  nav ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14;
+  }
+
+  h1{
+    font-family: Jura, sans-serif;
+    text-align: center;
+    font-size: 130px;
+  }
+
+  p{
+    font-family: Jura, sans-serif;
+    font-size: 40px;
+    text-align: center;
+  }
+
+
+  header {
+    width: 100ww;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0.2rem;
+    background-color:#4F4F4F;}
+
+  } 
