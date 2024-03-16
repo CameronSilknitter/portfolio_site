@@ -20,7 +20,7 @@ body {
 
 
 #homebody{
-  background-image: url("../img/animatedsky.gif") !important;
+  background-image: url('../img/transpagefloatingpoint.mp4');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,6 +111,22 @@ body article {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.reflection {
+  width: 500px;
+  height: 333px;
+  position: relative;
+  background-color: #4F4F4F;
+}
+
+.reflection::after {
+  content: "";
+  background-color:inherit;
+  width:inherit;
+  height: inherit;
+  position: absolute;
+  bottom: -100%;
 }
 
 .sectionWrapper {
