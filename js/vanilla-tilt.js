@@ -2,7 +2,7 @@ var VanillaTilt = (function () {
 'use strict';
 
 /**
- * Created by Sergiu Șandor (micku7zu) on 1/27/2017.
+ * CREDIT: Effect created by Sergiu Șandor (micku7zu) on 1/27/2017.
  * Original idea: https://github.com/gijsroge/tilt.js
  * MIT License.
  * Version 1.8.1
@@ -394,6 +394,8 @@ class VanillaTilt {
     }, this.settings.speed);
 
   }
+
+mouseEventElement
 
   /**
    * Method return patched settings of instance

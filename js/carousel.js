@@ -5,7 +5,7 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 4,
   spaceBetween: 60,
   mousewheel: true,
-  parallax: true,
+  parallax: false,
   centeredSlides: true,
   effect: "coverflow",
   coverflowEffect: {

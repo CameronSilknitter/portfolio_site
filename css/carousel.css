@@ -49,6 +49,7 @@ body {
     border-radius: 25em 25em 25em 25em;
     background-color:#4F4F4F;
     background-image: linear-gradient(#535353, #868686);
+    animation: vertical-shaking 18s infinite;
   }
 
   nav{
@@ -56,6 +57,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 40%;
+    animation: vertical-shaking 18s infinite;
   }
 
   nav ul{
@@ -92,10 +94,12 @@ body {
     text-align: center;
     color: #535353;
     font-size: 165px;
+    animation: vertical-shaking 8.5s infinite;
   }
 
   p{
     font-family: Jura, sans-serif;
+    color: #535353;
     font-size: 64px;
     text-align: center;
 
@@ -114,7 +118,7 @@ body article {
 }
 
 .reflection {
-  width: 500px;
+  width: 50px;
   height: 333px;
   position: relative;
   background-color: #4F4F4F;
@@ -141,7 +145,7 @@ body article {
 .swiper {
   width: 100%;
   height: 100%;
-  padding: 50px 20px;
+  padding: 20px 20px;
   overflow: visible;
 }
 
@@ -157,7 +161,8 @@ body article {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: rgba(102, 102, 102, 0.8);
+  /* background-color: rgba(102, 102, 102, 0.8); */
+  background-color: transparent;
   border-radius: 25px;
   padding: 10px;
   margin: 0;
@@ -172,8 +177,6 @@ body article {
   right: 0;
   width: 80px;
   height: 80px;
-  border-bottom: 1px dashed white;
-  border-right: 1px solid white;
   border-radius: 6em 6em 6em 6em;
   content: "";
   transition: all 0.3s ease;
@@ -185,14 +188,12 @@ body article {
   left: 0;
   width: 80px;
   height: 80px;
-  border-top: 1px solid white;
-  border-left: 1px dashed white;
   border-radius: 7px 0 0 0;
   content: "";
   transition: all 0.3s ease;
 }
 
-.swiper .swiper-slide:hover {
+/* .swiper .swiper-slide:hover {
   background: linear-gradient(
     135deg,
     #ff1e9c99,
@@ -207,8 +208,9 @@ body article {
     #252aff99,
     #2641ff99,
     #2649ff99
+    
   );
-}
+} */
 
 .swiper .swiper-slide:hover::before,
 .swiper .swiper-slide:hover::after {
@@ -220,7 +222,11 @@ body article {
 .swiper .swiper-slide .cardPopout {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(36, 36, 36, 0.475);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   border-radius: 25px;
   padding: 20px;
   width: 100%;
@@ -228,6 +234,7 @@ body article {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  animation: tilt-n-move-shaking 11s infinite;
 }
 
 .swiper .swiper-slide img {
@@ -269,6 +276,7 @@ body article {
 
 .swiper .swiper-slide figcaption p {
   color: #999;
+  font-weight: 700;
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -365,3 +373,27 @@ body article {
     width: 320%;
   }
 }
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes tilt-n-move-shaking {
+0% { transform: translate(0, 0) rotate(0deg); }
+25% { transform: translate(15px, 15px) rotate(5deg); }
+50% { transform: translate(0, 0) rotate(0deg); }
+75% { transform: translate(-15px, 15px) rotate(-5deg); }
+100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Will be used for Page Titles */
+@keyframes vertical-shaking {
+0% { transform: translateY(0) }
+25% { transform: translateY(15px) }
+50% { transform: translateY(-15px) }
+75% { transform: translateY(15px) }
+100% { transform: translateY(0) }

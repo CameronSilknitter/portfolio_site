@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" >
+  <audio autoplay loop src="../portfolio_site-main/wav/ambientrance01.wav"></audio>
 <head>
   <meta charset="UTF-8">
   <title>Home</title>
@@ -79,8 +80,6 @@
 
           </div>
 
-          <section class="reflection"></section>
-
         </figure>
 
          <!-- Each Figure is its own Card - Card 2-->
@@ -117,7 +116,7 @@
 
           <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
 
-            <img src="https://fakeimg.pl/356x256" alt="blue tang" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+            <img src="../portfolio_site-main/img/tempcheck.gif" alt="jellyfish" width="356" height="256" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
 
             <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
               
@@ -200,6 +199,13 @@
 </article>
 <!-- partial -->
   <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script><script  src="./js/carousel.js"></script>
+  <script type="text/javascript" src="../portfolio_site-main/js/vanilla-tilt.js"></script>
+  <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".swiper .swiper-slide"), {
+          max: 25,
+          speed: 400
+      });
+      </script>
 
 </body>
 </html>

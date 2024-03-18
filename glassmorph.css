@@ -84,6 +84,7 @@ body
     max-width: 1200px;
     flex-wrap: wrap;
     z-index: 1;
+    animation: tilt-n-move-shaking 11s infinite;
 }
 
 .container .card
@@ -185,3 +186,35 @@ body
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 */
+
+body { font-family: sans-serif; }
+
+div {
+  text-align: center;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(15px, 15px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0deg); }
+  75% { transform: translate(-15px, 15px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Will be used for Page Titles */
+@keyframes vertical-shaking {
+  0% { transform: translateY(0) }
+  25% { transform: translateY(5px) }
+  50% { transform: translateY(-5px) }
+  75% { transform: translateY(5px) }
+  100% { transform: translateY(0) }
+}
+
