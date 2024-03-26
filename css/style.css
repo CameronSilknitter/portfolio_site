@@ -76,6 +76,7 @@ body{
     background-color:#4F4F4F;
     background-image: linear-gradient(#535353, #868686);
     position: relative;
+    animation: vertical-shaking 18s infinite;
   }
 
   .header_hzlayout{
@@ -91,15 +92,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    left: 65%;
+    width: 40%;
+    animation: vertical-shaking 18s infinite;
   }
 
   nav ul{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+    align-items: right;
   }
 
   nav ul li{
